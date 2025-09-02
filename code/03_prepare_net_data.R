@@ -111,10 +111,6 @@ net_dat_all_to_s6$rr_ps_mean_rev <- 3 - net_dat_all_to_s6$rr_ps_mean
 # Restructure data ----
 # ---------------------------------------------------------------------------- #
 
-# Save long format data for search for auxiliary variables, etc.
-
-save(net_dat_all_to_s6, file = "./data/intermediate/net_dat_all_to_s6.RData")
-
 # Convert to wide format
 
 net_dat_all_to_s6_wide <- reshape(net_dat_all_to_s6, 

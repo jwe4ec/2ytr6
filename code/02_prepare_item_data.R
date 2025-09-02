@@ -1599,13 +1599,3 @@ write.csv(merge_rr_rest2, file = "./data/intermediate/merge_rr_rest2.csv",
 
 write.csv(participant_raw_rest2, file = "./data/intermediate/participant_raw_rest2.csv", 
           row.names = FALSE)
-
-# Export clean restricted demographics data (cleaner than raw data)
-
-write.csv(demographics_cln_rest2, file = "./data/intermediate/demographics_cln_rest2.csv", 
-          row.names = FALSE)
-
-# Export raw restricted credibility data (not available in clean data)
-
-write.csv(credibility_raw_rest2, file = "./data/intermediate/credibility_raw_rest2.csv", 
-          row.names = FALSE)
