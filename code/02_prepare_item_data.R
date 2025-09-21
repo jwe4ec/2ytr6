@@ -31,11 +31,14 @@
 #    available. However, the file was likely created by adjusting the script "R34.ipynb" 
 #    in the study's Data Cleaning folder (https://bit.ly/3CLi5It) on GitHub.
 
-# 2. Raw data files obtained from Sonia Baee on 9/3/2020 (called Set A in this script), 
-#    who stated on that date that they represent the latest version of the database on 
-#    the R34 server and that she obtained them from Claudia Calicho-Mamani
+# 2. 26 raw data files obtained from Sonia Baee on 9/3/2020, who stated on that 
+#    date that they represent the latest version of the database on the R34 server 
+#    and that she obtained them from Claudia Calicho-Mamani. These are Set A from
+#    "public-v1.0.0.zip" on the Public Component (https://osf.io/2x3jq/) of the
+#    OSF project for the Managing Anxiety study (https://osf.io/pvd67/).
 
-# 3. A partial set of raw data files obtained from Sonia Baee on 1/18/2023 (called Set B)
+# 3. A partial set of 20 raw data files obtained from Sonia Baee on 1/18/2023.
+#    These are Set B from "public-v1.0.0.zip".
 
 # ---------------------------------------------------------------------------- #
 # Store working directory, check correct R version, load packages ----
@@ -196,8 +199,8 @@ names(raw_dat)[names(raw_dat) == "DASS21_DS_recovered_Feb_02_2019_FIXED"] <- "da
 names(raw_dat)[names(raw_dat) == "DD_recovered_Feb_02_2019"] <- "dd"
 names(raw_dat)[names(raw_dat) == "Demographic_recovered_Feb_02_2019"] <- "demographic"
 names(raw_dat)[names(raw_dat) == "EmailLogDAO_recovered_Feb_02_2019"] <- "email_log"
-names(raw_dat)[names(raw_dat) == "GiftLogDAO_recovered_Feb_02_2019"] <- "gift_log"
-names(raw_dat)[names(raw_dat) == "ImageryPrime_recovered_Feb_02_2019"] <- "imagery_prime"
+names(raw_dat)[names(raw_dat) == "GiftLogDAO_recovered_Feb_02_2019_redacted"] <- "gift_log"
+names(raw_dat)[names(raw_dat) == "ImageryPrime_recovered_Feb_02_2019_redacted"] <- "imagery_prime"
 names(raw_dat)[names(raw_dat) == "ImpactAnxiousImagery_recovered_Feb_02_2019"] <- "impact_anxious_imagery"
 names(raw_dat)[names(raw_dat) == "MentalHealthHxTx_recovered_Feb_02_2019"] <- "mental_health_hx_tx"
 names(raw_dat)[names(raw_dat) == "MultiUserExperience_recovered_Feb_02_2019"] <- "multi_user_experience"
